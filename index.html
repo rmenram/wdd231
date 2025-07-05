@@ -5,10 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD213 - Ricardo Mendoza Ramos</title>
+    <meta name="description" content="Ricardo Mendoza Ramos. Web Frontend Development WDD 213.">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mayan+Numerals&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>WDD 231 - Ricardo Mendoza Ramos</h1>
+    <header>
+        <img src="images/corporate.svg" alt="Site Logo" width="24" height="24">
+        <span>Course Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
+        </div>
+        <p><span id="year"></span> | Ricardo Mendoza Ramos | USA</p>
+        <p>Last Modified <span id="short"></span></p>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
 </body>
 
 </html>
