@@ -14,11 +14,10 @@
     <script src="scripts/course.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mayan+Numerals&family=Tilt+Neon&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadCourses('completed')">
     <header>
         <img src="images/corporate.svg" alt="Site Logo" width="24" height="24">
         <span>Course Home Page</span>
@@ -33,16 +32,49 @@
     </nav>
     <main>
         <h1>Home</h1>
+        <div class="container">
+            <section>
+                <h2>About Me</h2>
+                <div class="bio">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ullam ex, alias delectus
+                    aspernatur
+                    mollitia earum, dicta vitae architecto soluta repellat nulla provident. Molestias vitae placeat
+                    temporibus! Cupiditate, ab temporibus?
+                </div>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <div class="hero">
+                    <img src="images/profile.jpg" alt="" width="" height="">
+                </div>
+            </section>
+            <section class="course-section">
+                <h2>Web Certificate Courses</h2>
+                <div class="button-menu">
+                    <button onclick="loadCourses('All')">All</button>
+                    <button onclick="loadCourses('CSE')">CSE</button>
+                    <button onclick="loadCourses('WDD')">WDD</button>
+                </div>
+                <div class="courses">
+
+                </div>
+                <div class="credits">
+
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="social">
             <a href="#" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
             <a href="#" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
-            <a href="#" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
+            <!-- <a href="#" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a> -->
             <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="" width="16" height="16"></a>
         </div>
-        <p><span id="year"></span> | Ricardo Mendoza Ramos | USA</p>
-        <p>Last Modified <span id="short"></span></p>
+        <div class="dates">
+            <p><span id="year"></span> | Ricardo Mendoza Ramos | USA</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
     <script src="scripts/navigation.js" defer></script>
 </body>

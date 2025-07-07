@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 /**************** HEADER *****************/
 header {
     display: grid;
@@ -41,6 +45,7 @@ header span {
 /************** NAVIGATION ***************/
 .navigation {
     display: none;
+    background-color: #3D405B;
 }
 
 .navigation.show {
@@ -56,35 +61,41 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #3D405B;
+    color: white;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: gray;
+    color: white;
 }
 
 .navigation a:hover {
-    background-color: gray;
+    background-color: #333;
     color: white;
 }
 
 h1 {
     margin-left: 10px;
+    margin-bottom: 0;
 }
 
 /**************** FOOTER *****************/
 footer {
-    background-color: #eee;
-    padding: 1rem 10px;
+    /* background-color: #eee; */
+    /* padding: 1rem 10px; */
+    padding: 0 10px;
     text-align: center;
 }
 
 .social {
+    /* border: dashed 1px red; */
+    margin-top: 0;
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    padding: 5px 0 10px 0;
 }
 
 .social a {
@@ -104,4 +115,69 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+}
+
+.dates {
+    background-color: #eee;
+    padding: 1px;
+}
+
+
+/****************** MAIN *******************/
+main {
+    /* border: dashed 1px blue; */
+    margin: 0;
+}
+
+main section {
+    background-color: #eee;
+    margin-top: 1rem;
+}
+
+.course-section {
+    /* border: dashed 1px red; */
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #3D405B;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.hero img {
+    width: 70%;
+    height: auto;
+}
+
+.button-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.button-menu button {
+    flex: 1;
+}
+
+.courses p {
+    text-align: center;
+    margin: 5px 0;
+    padding: 1rem;
+    background-color: #ccc;
+}
+
+.credits {
+    text-align: center;
+    padding: 5px;
 }
