@@ -84,7 +84,15 @@ function addCourses(filteredCourses) {
     document.querySelector(".courses").innerHTML = "";
     filteredCourses.forEach(filteredCourse => {
         let abbreviation = document.createElement("p");
-        abbreviation.textContent = filteredCourse.subject + ' ' + filteredCourse.number;
+        if (filteredCourse.completed == true) {
+            abbreviation.textContent = '✓ ' + filteredCourse.subject + ' ' + filteredCourse.number;
+            abbreviation.classList.add("completed");
+        }
+        else {
+            abbreviation.textContent = filteredCourse.subject + ' ' + filteredCourse.number;
+            abbreviation.classList.add("not-completed");
+        }
+        // abbreviation.textContent = filteredCourse.subject + ' ' + filteredCourse.number;
         document.querySelector(".courses").appendChild(abbreviation);
         // credits += filteredCourse.credits;
     }
