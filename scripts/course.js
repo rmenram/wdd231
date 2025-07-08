@@ -106,3 +106,19 @@ function loadCourses(filterName) {
     }
 
 }
+
+//course buttons
+const btnAll = document.querySelector('#btn-All');
+const btnCSE = document.querySelector('#btn-CSE');
+const btnWDD = document.querySelector('#btn-WDD');
+
+//call the loadCourses method with the corresponding filter
+btnAll.addEventListener('click', () => {
+    loadCourses('All');
+});
+btnCSE.addEventListener('click', () => {
+    loadCourses('CSE');
+});
+btnWDD.addEventListener('click', () => {
+    loadCourses('WDD');
+});
