@@ -79,17 +79,22 @@ const courses = [
 ]
 
 function addCourses(filteredCourses) {
-    let credits = 0;
+    // let credits = 0;
     document.querySelector(".credits").innerHTML = "";
     document.querySelector(".courses").innerHTML = "";
     filteredCourses.forEach(filteredCourse => {
         let abbreviation = document.createElement("p");
         abbreviation.textContent = filteredCourse.subject + ' ' + filteredCourse.number;
         document.querySelector(".courses").appendChild(abbreviation);
-        credits += filteredCourse.credits;
+        // credits += filteredCourse.credits;
     }
     )
-    document.querySelector(".credits").innerHTML = 'Total credits for courses listed above is ' + credits;
+
+    const totalCredits = filteredCourses.reduce((accumulator, currentItem) => {
+        return accumulator + currentItem.credits;
+    }, 0);
+
+    document.querySelector(".credits").innerHTML = 'Total credits for courses listed above is ' + totalCredits;
 }
 
 function loadCourses(filterName) {
