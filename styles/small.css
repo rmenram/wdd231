@@ -67,7 +67,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: gray;
+    background-color: #333;
     color: white;
 }
 
@@ -183,7 +183,7 @@ h2 {
 }
 
 .completed {
-    background-color: gray;
+    background-color: #333;
     color: white;
 }
 
