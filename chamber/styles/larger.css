@@ -1,0 +1,99 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px 326px auto;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.7rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        border-bottom: solid 1px #eee;
+        justify-content: end;
+        width: 100%;
+        grid-row: 1;
+        /* Move to 1st row */
+        grid-column: 3 / -1;
+        /* Span only last column in row */
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .card-section {
+        grid-column: 1 / -1;
+        /* Span both columns */
+        /* Styles for section 3 */
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 1rem;
+    }
+
+    .listings {
+        grid-column: 1 / -1;
+        background-color: white;
+    }
+
+    .listings div:nth-child(even) {
+        background-color: #eee;
+    }
+
+    .listings div:nth-child(odd) {
+        background-color: white;
+    }
+
+    .listing {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+        font-size: 0.8rem;
+        border: solid 1px #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .list-column {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
