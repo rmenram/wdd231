@@ -94,41 +94,41 @@ const businesses = [
 
 function addCards(filteredBusinesses) {
     document.querySelector(".cards").innerHTML = "";
-    filteredBusinesses.forEach(filteredCourse => {
+    filteredBusinesses.forEach(filteredBusiness => {
         let card = document.createElement("div");
         card.classList.add("card");
         let abbreviation = document.createElement("p");
-        if (filteredCourse.membership == 3) {
-            abbreviation.textContent = '✓ ' + filteredCourse.name;
-            abbreviation.classList.add("completed");
+        if (filteredBusiness.membership == 3) {
+            abbreviation.textContent = '✓ ' + filteredBusiness.name;
+            // abbreviation.classList.add("completed");
         }
-        else if (filteredCourse.membership == 2) {
-            abbreviation.textContent = filteredCourse.name;
-            abbreviation.classList.add("not-completed");
+        else if (filteredBusiness.membership == 2) {
+            abbreviation.textContent = filteredBusiness.name;
+            // abbreviation.classList.add("not-completed");
         }
         else {
-            abbreviation.textContent = filteredCourse.name;
-            abbreviation.classList.add("not-completed");
+            abbreviation.textContent = filteredBusiness.name;
+            // abbreviation.classList.add("not-completed");
         }
-        // abbreviation.textContent = filteredCourse.subject + ' ' + filteredCourse.number;
+        // abbreviation.textContent = filteredBusiness.subject + ' ' + filteredBusiness.number;
         card.appendChild(abbreviation);
         // document.querySelector(".courses").appendChild(abbreviation);
 
         let logo = document.createElement('img');
-        logo.src = 'images/' + filteredCourse.logo;
-        logo.alt = filteredCourse.logo + ' logo';
+        logo.src = 'images/' + filteredBusiness.logo;
+        logo.alt = filteredBusiness.logo + ' logo';
         card.appendChild(logo);
 
         let address = document.createElement("p");
-        address.innerHTML = filteredCourse.address;
+        address.innerHTML = filteredBusiness.address;
         card.appendChild(address);
 
         let phone = document.createElement("p");
-        phone.innerHTML = filteredCourse.phone;
+        phone.innerHTML = filteredBusiness.phone;
         card.appendChild(phone);
 
         let website = document.createElement("p");
-        website.innerHTML = `<a href="${filteredCourse.website}" target="_blank">${filteredCourse.website}</a>`;
+        website.innerHTML = `<a href="${filteredBusiness.website}" target="_blank">${filteredBusiness.website}</a>`;
         card.appendChild(website);
 
         document.querySelector(".cards").appendChild(card);
@@ -139,27 +139,27 @@ function addCards(filteredBusinesses) {
 function addListing(filteredBusinesses) {
     document.querySelector(".cards").innerHTML = "";
     document.querySelector(".listings").innerHTML = "";
-    filteredBusinesses.forEach(filteredCourse => {
+    filteredBusinesses.forEach(filteredBusiness => {
         let card = document.createElement("div");
         // card.classList.add("listing");
 
         let abbreviation = document.createElement("span");
-        abbreviation.textContent = filteredCourse.name;
+        abbreviation.textContent = filteredBusiness.name;
         // abbreviation.classList.add("list-column");
         card.appendChild(abbreviation);
 
         let address = document.createElement("span");
-        address.innerHTML = filteredCourse.address;
+        address.innerHTML = filteredBusiness.address;
         // address.classList.add("list-column");
         card.appendChild(address);
 
         let phone = document.createElement("span");
-        phone.innerHTML = filteredCourse.phone;
+        phone.innerHTML = filteredBusiness.phone;
         // phone.classList.add("list-column");
         card.appendChild(phone);
 
         let website = document.createElement("span");
-        website.innerHTML = `<a href="${filteredCourse.website}" target="_blank">${filteredCourse.website}</a>`;
+        website.innerHTML = `<a href="${filteredBusiness.website}" target="_blank">${filteredBusiness.website}</a>`;
         // website.classList.add("list-column");
         card.appendChild(website);
 
