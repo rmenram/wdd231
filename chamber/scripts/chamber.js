@@ -94,6 +94,7 @@ const businesses = [
 
 function addCards(filteredBusinesses) {
     document.querySelector(".cards").innerHTML = "";
+    document.querySelector(".listings").innerHTML = "";
     filteredBusinesses.forEach(filteredBusiness => {
         let card = document.createElement("div");
         card.classList.add("card");
