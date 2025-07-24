@@ -141,26 +141,26 @@ function addListing(filteredBusinesses) {
     document.querySelector(".listings").innerHTML = "";
     filteredBusinesses.forEach(filteredCourse => {
         let card = document.createElement("div");
-        card.classList.add("listing");
+        // card.classList.add("listing");
 
         let abbreviation = document.createElement("span");
         abbreviation.textContent = filteredCourse.name;
-        abbreviation.classList.add("list-column");
+        // abbreviation.classList.add("list-column");
         card.appendChild(abbreviation);
 
         let address = document.createElement("span");
         address.innerHTML = filteredCourse.address;
-        address.classList.add("list-column");
+        // address.classList.add("list-column");
         card.appendChild(address);
 
         let phone = document.createElement("span");
         phone.innerHTML = filteredCourse.phone;
-        phone.classList.add("list-column");
+        // phone.classList.add("list-column");
         card.appendChild(phone);
 
         let website = document.createElement("span");
         website.innerHTML = `<a href="${filteredCourse.website}" target="_blank">${filteredCourse.website}</a>`;
-        website.classList.add("list-column");
+        // website.classList.add("list-column");
         card.appendChild(website);
 
         document.querySelector(".listings").appendChild(card);

@@ -267,7 +267,7 @@ h2 {
     background-color: white;
 }
 
-.listing {
+.listings div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1rem;
@@ -278,7 +278,7 @@ h2 {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-.list-column {
+.listings div span {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
