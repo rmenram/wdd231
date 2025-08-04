@@ -41,8 +41,11 @@
     </header>
     <main>
         <h1>Join Las Vegas Chamber of Commerce</h1>
-        <div class="container">
+        <div class="join">
             <form id="joinForm" method="get" action="thankyou.html">
+                <h2>
+                    Membership Application Form
+                </h2>
                 <label>
                     First Name:
                     <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
@@ -87,7 +90,64 @@
                 <input type="hidden" id="timestamp" name="timestamp">
                 <input type="submit" value="Submit Application">
             </form>
+            <div class="levels">
+                <h2>
+                    Membership Levels
+                </h2>
+                <div>
+                    <h3>
+                        Non Profit
+                    </h3>
+                    <button class="learnMore" data-modal="nonp">Learn More</button>
+                </div>
+                <div>
+                    <h3>
+                        Bronze
+                    </h3>
+                    <button class="learnMore" data-modal="bronze">Learn More</button>
+                </div>
+                <div>
+                    <h3>
+                        Silver
+                    </h3>
+                    <button class="learnMore" data-modal="silver">Learn More</button>
+                </div>
+                <div>
+                    <h3>
+                        Gold
+                    </h3>
+                    <button class="learnMore" data-modal="gold">Learn More</button>
+                </div>
+            </div>
         </div>
+        <dialog id="nonp">
+            <h3>Non Profit Benefits:</h3>
+            <p>Exclusive for Non Profit Organizations.</p>
+            <p>No Fee.</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+        <dialog id="bronze">
+            <h3>Bronze Benefits:</h3>
+            <p>Member Pricing on Events</p>
+            <p>Group Discounts</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+        <dialog id="silver">
+            <h3>Silver Benefits:</h3>
+            <p>Includes Bronze Benefits, plus </p>
+            <p>Advertising</p>
+            <p>Free Admission to Events</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+        <dialog id="gold">
+            <h3>Gold Benefits:</h3>
+            <p>Includes Silver Benefits, plus </p>
+            <p>After-Event Meets</p>
+            <p>VIP Receptions</p>
+            <p>Lunch with LVCC Board</p>
+            <p>One on One Meeting with LVCC Chamber President</p>
+            <button class="closeModal">Close</button>
+        </dialog>
     </main>
     <footer>
         <div class="address">

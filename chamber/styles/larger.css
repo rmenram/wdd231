@@ -96,4 +96,23 @@
         text-overflow: ellipsis;
     }
 
+    .join {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .join form h2 {
+        margin-bottom: 33px;
+    }
+
+    .levels h2 {
+        height: 1.7rem;
+        margin: 0;
+    }
+
+    .levels {
+        padding-top: 33px;
+        margin-top: 0;
+    }
+
 }
