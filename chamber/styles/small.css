@@ -283,3 +283,17 @@ h2 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.formData {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.formData span {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px;
+    margin: 10px;
+}

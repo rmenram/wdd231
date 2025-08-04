@@ -10,15 +10,14 @@
     <meta property="og:description" content="WDD 213 - Las Vegas Chamber of Commerce Project">
     <meta property="og:image" content="https://rmenram.github.io/wdd231/chamber/images/open_graph_image.jpg">
     <meta property="og:title"
-        content="WDD 213 - Las Vegas Chamber of Commerce Project. This a project for a sample Chamber of Commerce join form.">
-    <meta property="og:url" content="https://rmenram.github.io/wdd231/chamber/join.html">
+        content="WDD 213 - Las Vegas Chamber of Commerce Project. This a project for a sample Chamber of Commerce related sites page.">
+    <meta property="og:url" content="https://rmenram.github.io/wdd231/chamber/discover.html">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <!-- <script src="scripts/navigation.js" defer></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,59 +33,18 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li class="current"><a href="#">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Join Las Vegas Chamber of Commerce</h1>
-        <div class="container">
-            <form id="joinForm" method="get" action="thankyou.html">
-                <label>
-                    First Name:
-                    <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
-                </label>
-                <label>
-                    Last Name:
-                    <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
-                </label>
-                <label>
-                    Organizational Title:
-                    <input type="text" name="orgTitle"
-                        title="Organizational Title (minimum 7 characters, only letters, spaces, hyphens)"
-                        autocomplete="organization-title">
-                </label>
-                <label>
-                    Email:
-                    <input type="email" name="email" required title="Email Address" autocomplete="email"
-                        placeholder="example@domain.com">
-                </label>
-                <label>
-                    Mobile Phone:
-                    <input type="tel" name="phone" required title="Mobile Phone Number" autocomplete="tel">
-                </label>
-                <label>
-                    Business/Organization Name:
-                    <input type="text" name="organization" required title="Organization Name"
-                        autocomplete="organization">
-                </label>
-                <label>
-                    Membership Level:
-                    <select name="membership" title="Membership Level">
-                        <option value="np">NP Membership (Free)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
-                <label>
-                    Business Description:
-                    <textarea name="description" title="Business/Organization Description"></textarea>
-                </label>
-                <input type="hidden" id="timestamp" name="timestamp">
-                <input type="submit" value="Submit Application">
-            </form>
+        <h1>Thank you for joining!</h1>
+        <div class="formData">
+            <h2>This is the information you submitted:</h2>
+            <div id="form-data">
+            </div>
+            <p><a href="join.html">Add another business</a></p>
         </div>
     </main>
     <footer>
