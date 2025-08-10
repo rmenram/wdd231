@@ -1,0 +1,67 @@
+body {
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+header {
+    background-color: #333333;
+    color: #fefae0;
+    padding-left: 20px;
+    padding-bottom: 1px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+h3 {
+    background-color: #000814;
+    color: white;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Noto Sans Mayan Numerals', sans-serif;
+}
+
+footer {
+    background-color: #780000;
+    color: #fefae0;
+    text-align: center;
+}
+
+.primary-color {
+    background-color: #283618;
+    color: white;
+    font-family: 'Noto Sans Mayan Numerals', sans-serif;
+    width: 90%;
+    padding: 1rem;
+}
+
+.secondary-color {
+    background-color: #780000;
+    color: white;
+    font-family: 'Noto Sans Mayan Numerals', sans-serif;
+    width: 90%;
+    padding: 1rem;
+}
+
+.accent1-color {
+    background-color: #000814;
+    color: white;
+    font-family: 'Noto Sans Mayan Numerals', sans-serif;
+    width: 90%;
+    padding: 1rem;
+}
+
+.accent2-color {
+    background-color: #333333;
+    color: white;
+    font-family: 'Noto Sans Mayan Numerals', sans-serif;
+    width: 90%;
+    padding: 1rem;
+}
