@@ -1,0 +1,17 @@
+@media only screen and (min-width: 38rem) and (max-width: 56rem) {
+    .discover {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .disc {
+        /* padding: 0.5rem; */
+        margin: 0.5rem;
+        grid-template-areas:
+            "name name"
+            "photograph description"
+            "photograph location"
+            "photograph button";
+    }
+}

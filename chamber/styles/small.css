@@ -333,3 +333,59 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+.discover {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.discover article:nth-child(even) {
+    background-color: #eee;
+}
+
+.discover article:nth-child(odd) {
+    background-color: white;
+}
+
+.disc {
+    /* background-color: #ccc; */
+    /* border: 1px solid #ccc; */
+    padding-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-areas:
+        "name"
+        "button"
+        "photograph"
+        "description"
+        "location";
+}
+
+.disc h2 {
+    grid-area: name;
+}
+
+.disc address {
+    grid-area: location;
+}
+
+.disc figure {
+    grid-area: photograph;
+}
+
+.disc p {
+    grid-area: description;
+}
+
+.disc button {
+    grid-area: button;
+}
+
+aside {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    height: 1rem;
+}
