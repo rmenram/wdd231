@@ -1,0 +1,188 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px 326px auto;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.7rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        border-bottom: solid 1px #eee;
+        justify-content: end;
+        width: 100%;
+        grid-row: 1;
+        /* Move to 1st row */
+        grid-column: 3 / -1;
+        /* Span only last column in row */
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .container {
+        /* height: 100vh; */
+        /* Full viewport height */
+        height: 652px;
+        background-image: url('../images/lasvegas-strip-high.webp');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .downtown {
+        /* height: 100vh; */
+        /* Full viewport height */
+        height: 652px;
+        background-image: url('../images/lasvegas-downtown-high.webp');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .outdoors {
+        /* height: 100vh; */
+        /* Full viewport height */
+        height: 652px;
+        background-image: url('../images/lasvegas-outdoors-high.webp');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .le {
+        opacity: 0.8;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ne {
+        opacity: 0;
+    }
+
+    .re {
+        opacity: 0.8;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .card-section {
+        grid-column: 1 / -1;
+        /* Span both columns */
+        /* Styles for section 3 */
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 1rem;
+    }
+
+    .listings {
+        grid-column: 1 / -1;
+        background-color: white;
+    }
+
+    .listings div:nth-child(even) {
+        background-color: #eee;
+    }
+
+    .listings div:nth-child(odd) {
+        background-color: white;
+    }
+
+    .listing {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1rem;
+        font-size: 0.8rem;
+        border: solid 1px #ccc;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .list-column {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .listings div span {
+        white-space: nowrap;
+        /* overflow: hidden;
+        text-overflow: ellipsis; */
+    }
+
+    .listings div img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .tellus {
+
+        height: 652px;
+        background-image: url('../images/lasvegas-strip-high.webp');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+
+    .tellus form h2 {
+        margin-bottom: 33px;
+    }
+
+    .locations h2 {
+        height: 1.7rem;
+        margin: 0;
+    }
+
+    .locations {
+        padding-top: 33px;
+        margin-top: 0;
+    }
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 213 - Las Vegas Best</title>
+    <meta name="description" content="WDD 213 - Las Vegas Best Project">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <meta property="og:description" content="WDD 213 - Las Vegas Best Project">
+    <meta property="og:image" content="https://rmenram.github.io/wdd231/lasvegasbest/images/open_graph_image.jpg">
+    <meta property="og:title"
+        content="WDD 213 - Las Vegas Best Project. This is a project for recommended Las Vegas Best places to visit page.">
+    <meta property="og:url" content="https://rmenram.github.io/wdd231/lasvegasbest/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/tellus.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/tellus.js" defer></script>
+    <!-- <script src="scripts/navigation.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/corporate.svg" alt="Site Logo" width="24" height="24">
+        <span>Las Vegas Best</span>
+        <button id="ham-btn" class="hamburger" aria-label="Mobile Menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="strip.html">Strip</a></li>
+                <li><a href="downtown.html">Downtown</a></li>
+                <li><a href="outdoors.html">Outdoors</a></li>
+                <li class="current"><a href="#">Tell Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Tell Us</h1>
+        <div class="hero">
+            <picture>
+                <img src="images/lasvegas-strip-small.webp" loading="lazy" alt="Las Vegas Strip, Las Vegas, Nevada">
+            </picture>
+        </div>
+        <div class="tellus">
+            <form id="joinForm" method="get" action="thankyou.html">
+                <h2>
+                    Tell Us Your Las Vegas Best
+                </h2>
+                <label>
+                    Attraction Name:
+                    <input type="text" name="attractionName" required title="Attraction Name"
+                        autocomplete="attraction-name">
+                </label>
+                <label>
+                    Attraction Address:
+                    <input type="text" name="attractionAddress" required title="Attraction Address"
+                        autocomplete="attraction-address">
+                </label>
+                <label>
+                    Attraction Website:
+                    <input type="text" name="attractionWebsite" title="Attraction Website"
+                        autocomplete="attraction-website">
+                </label>
+                <label>
+                    Attraction Location:
+                    <select name="attractionLocation" title="Attraction Location">
+                        <option value="Strip">Strip</option>
+                        <option value="Downtown">Downtown</option>
+                        <option value="Outdoors">Outdoors</option>
+                    </select>
+                </label>
+                <label>
+                    Attraction Description:
+                    <textarea name="attractionDescription" title="Attraction Description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Send Attraction">
+            </form>
+            <div class="locations">
+                <h2>
+                    Attraction Locations
+                </h2>
+                <div>
+                    <h3>
+                        Strip
+                    </h3>
+                    <button class="learnMore" data-modal="nonp">Learn More</button>
+                </div>
+                <div>
+                    <h3>
+                        Downtown
+                    </h3>
+                    <button class="learnMore" data-modal="bronze">Learn More</button>
+                </div>
+                <div>
+                    <h3>
+                        Outdoors
+                    </h3>
+                    <button class="learnMore" data-modal="silver">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <dialog id="nonp">
+            <h3>Strip</h3>
+            <p>The Las Vegas Strip, a roughly 4.2-mile stretch of South Las Vegas Boulevard, is a world-renowned hub of
+                entertainment, gaming, luxury hotels, and themed resorts. While often associated with the city of Las
+                Vegas, the majority of the Strip actually lies outside the city limits, within the unincorporated towns
+                of Paradise and Winchester in Clark County, Nevada.</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+        <dialog id="bronze">
+            <h3>Downtown</h3>
+            <p>Downtown Las Vegas, often referred to as DTLV, is the city's historic and original gambling and
+                entertainment district, predating the more famous Strip. It offers a distinctly different vibe from the
+                glamorous mega-resorts of the Strip, being described as grittier, louder, and more focused on the
+                classic Vegas experience.</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+        <dialog id="silver">
+            <h3>Outdoors</h3>
+            <p>Beyond the dazzling lights and vibrant nightlife, Las Vegas is surrounded by stunning desert landscapes
+                offering a surprising array of outdoor activities.</p>
+            <button class="closeModal">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="address">
+            <h3>Las Vegas Best</h3>
+            <p>1234 Main St</p>
+            <p>Las Vegas, NV 12345</p>
+            <p>info@lasvegasbest.org</p>
+            <p>123-456-7890</p>
+        </div>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt="Git Hub" width="16" height="16"></a>
+            <!-- <a href="#" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a> -->
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="twitter-X" width="16" height="16"></a>
+        </div>
+        <div class="dates">
+            <h3>WDD231 Class Project</h3>
+            <p>Ricardo Mendoza Ramos</p>
+            <p><span id="year"></span> Las Vegas Best</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Las Vegas Nevada Temple",
+        "location": "outdoors",
+        "address": "827 Temple View Dr, Las Vegas, NV 89110",
+        "cost": "Free",
+        "description": "A spiritual landmark with six soaring spires and peaceful gardens, offering a quiet retreat from the city's bustle.",
+        "photo_url": "images/discover_lasvegastemple.webp",
+        "site_url": "https://www.churchofjesuschrist.org/temples/details/las-vegas-nevada-temple?lang=eng"
+    },
+    {
+        "name": "Lake Mead",
+        "location": "outdoors",
+        "address": "10 Lakeshore Rd, Boulder City, NV 89005",
+        "cost": "$25",
+        "description": "Massive desert oasis with boating, kayaking, hiking, camping, and scenic drives across 1.5 million acres of land and water.",
+        "photo_url": "images/discover_lakemead.webp",
+        "site_url": "https://www.nps.gov/lake/planyourvisit/fees.htm"
+    },
+    {
+        "name": "Seven Magic Mountains",
+        "location": "outdoors",
+        "address": "S Las Vegas Blvd, Las Vegas, NV 89054",
+        "cost": "Free",
+        "description": "Colorful desert art installation featuring seven towering stacks of painted boulders by artist Ugo Rondinone.",
+        "photo_url": "images/discover_sevenmountains.webp",
+        "site_url": "https://sevenmagicmountains.com/"
+    },
+    {
+        "name": "Mt. Charleston",
+        "location": "outdoors",
+        "address": "Mt Charleston, NV 89124",
+        "cost": "Free",
+        "description": "Alpine escape just 45 minutes from Las Vegas offering hiking, camping, snow sports, and scenic drives in the Spring Mountains.",
+        "photo_url": "images/discover_mtcharleston.webp",
+        "site_url": "https://www.gomtcharleston.com/hikes-trails/"
+    },
+    {
+        "name": "SlotZilla Zipline Las Vegas",
+        "location": "downtown",
+        "address": "425 Fremont St #160, Las Vegas, NV 89101",
+        "cost": "54",
+        "description": "Slot machine themed zipline attraction with two levels.",
+        "photo_url": "images/discover_slotzilla.webp",
+        "site_url": "https://vegasexperience.com/slotzilla-zip-line/"
+    },
+    {
+        "name": "The Mob Museum",
+        "location": "downtown",
+        "address": "300 Stewart Ave, Las Vegas, NV 89101",
+        "cost": "34.95",
+        "description": "Interactive exhibits on organized crime and law enforcement.",
+        "photo_url": "images/discover_themob.webp",
+        "site_url": "https://themobmuseum.org/plan-your-visit/purchase-tickets/"
+    },
+    {
+        "name": "The Arts Factory",
+        "location": "downtown",
+        "address": "107 E Charleston Blvd, Las Vegas, NV 89104",
+        "cost": "Free",
+        "description": "Gallery collective showcasing contemporary art, open to the public.",
+        "photo_url": "images/discover_artsfactory.webp",
+        "site_url": "https://www.theartsfactorylv.com/"
+    },
+    {
+        "name": "Downtown Container Park",
+        "location": "downtown",
+        "address": "707 E Fremont St, Las Vegas, NV 89101",
+        "cost": "Free",
+        "description": "Open-air shopping center built from shipping containers, with boutique shops, restaurants, live entertainment, and a playground.",
+        "photo_url": "images/discover_containerpark.webp",
+        "site_url": "https://downtowncontainerpark.com/visit/"
+    },
+    {
+        "name": "Shark Reef Aquarium",
+        "location": "strip",
+        "address": "3950 S Las Vegas Blvd, Las Vegas, NV 89119",
+        "cost": "$29+",
+        "description": "Aquatic exhibits featuring sharks, rays, and exotic marine life.",
+        "photo_url": "images/discover_sharkreef.webp",
+        "site_url": "https://mandalaybay.mgmresorts.com/en/entertainment/shark-reef-aquarium.html"
+    },
+    {
+        "name": "Flyover Las Vegas",
+        "location": "strip",
+        "address": "3771 Las Vegas Blvd S, Las Vegas, NV 89109",
+        "cost": "$32+",
+        "description": "Immersive flight simulation experience soaring over iconic landscapes with motion seats, wind, mist, and scents.",
+        "photo_url": "images/discover_flyover.webp",
+        "site_url": "https://www.flyoverlasvegas.com/"
+    },
+    {
+        "name": "The Aquarium at Silverton Casino",
+        "location": "strip",
+        "address": "3333 Blue Diamond Rd, Las Vegas, NV 89139",
+        "cost": "Free",
+        "description": "117,000-gallon saltwater aquarium with mermaid shows and thousands of tropical fish.",
+        "photo_url": "images/discover_mermaids.webp",
+        "site_url": "https://silvertoncasino.com/hotel/aquarium-mermaid-show/"
+    },
+    {
+        "name": "Bellagio Conservatory",
+        "location": "strip",
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "cost": "Free",
+        "description": "Seasonal floral displays in a skylit atrium.",
+        "photo_url": "images/discover_conservatory.webp",
+        "site_url": "https://bellagio.mgmresorts.com/en/entertainment/conservatory-botanical-garden.html"
+    },
+    {
+        "name": "Las Vegas Strip",
+        "location": "strip",
+        "address": "Las Vegas Blvd, Las Vegas, NV 89109",
+        "cost": "Free",
+        "description": "The iconic 4.2-mile stretch filled with dazzling lights, world-class casinos, themed hotels, live performances, shopping, dining, and entertainment. A must-see hub for visitors to soak in the vibrant energy of Las Vegas.",
+        "photo_url": "images/discover_strip.webp",
+        "site_url": "https://www.lasvegas.com/streets/strip/"
+    },
+    {
+        "name": "Bellagio Fountains",
+        "location": "strip",
+        "address": "3600 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "cost": "Free",
+        "description": "A spectacular choreographed water fountain show set to music, shooting water up to 460 feet. Shows run every 15-30 minutes and provide a mesmerizing daytime and nighttime spectacle.",
+        "photo_url": "images/discover_bellagio.webp",
+        "site_url": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html"
+    },
+    {
+        "name": "High Roller Observation Wheel",
+        "location": "strip",
+        "address": "3545 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "cost": "Adults $29-$39, Children $10-$19",
+        "description": "The world's tallest observation wheel offering panoramic 360-degree views of Las Vegas from 550 feet high. Luxurious, spacious cabins provide a unique sightseeing experience day or night.",
+        "photo_url": "images/discover_high.webp",
+        "site_url": "https://www.caesars.com/linq/high-roller"
+    },
+    {
+        "name": "Cirque du Soleil Shows",
+        "location": "strip",
+        "address": "Various locations along the Las Vegas Strip",
+        "cost": "Tickets range from $50 to $200+",
+        "description": "World-renowned theatrical productions featuring acrobatics, dance, and artistic storytelling. Popular shows include 'O' at Bellagio and 'Mystère' at Treasure Island.",
+        "photo_url": "images/discover_cirque.webp",
+        "site_url": "https://www.cirquedusoleil.com/las-vegas"
+    },
+    {
+        "name": "The Neon Museum",
+        "location": "downtown",
+        "address": "770 Las Vegas Blvd N, Las Vegas, NV 89101",
+        "cost": "Adults $22, Children $12",
+        "description": "An outdoor museum showcasing historic neon signs from old casinos and businesses. Guided tours provide fascinating insight into Las Vegas colorful history and visual culture.",
+        "photo_url": "images/discover_neon.webp",
+        "site_url": "https://www.neonmuseum.org/"
+    },
+    {
+        "name": "Fremont Street Experience",
+        "location": "downtown",
+        "address": "425 Fremont St, Las Vegas, NV 89101",
+        "cost": "Free",
+        "description": "A vibrant entertainment district with a massive LED canopy light show, live music, street performers, and thrilling SlotZilla zipline rides soaring over the crowds.",
+        "photo_url": "images/discover_fremont.webp",
+        "site_url": "https://vegasexperience.com/"
+    },
+    {
+        "name": "Hoover Dam",
+        "location": "outdoors",
+        "address": "Hoover Dam Access Road, Boulder City, NV 89005",
+        "cost": "Free to visit, guided tours $15-$30",
+        "description": "A monumental engineering marvel completed in 1936 that supports water and electricity supply across the Southwest. Visitors can explore the dam and power plant on guided tours.",
+        "photo_url": "images/discover_hoover.webp",
+        "site_url": "https://www.usbr.gov/lc/hooverdam/"
+    },
+    {
+        "name": "Red Rock Canyon",
+        "location": "outdoors",
+        "address": "3205 E Red Rock Canyon Loop Rd, NV 89161",
+        "cost": "$20 per vehicle entrance fee",
+        "description": "A stunning natural conservation area just 30 minutes from the Strip featuring red sandstone formations, hiking, biking, scenic drives, and wildlife viewing.",
+        "photo_url": "images/discover_redrock.webp",
+        "site_url": "https://www.redrockcanyonlv.org/"
+    },
+    {
+        "name": "The STRAT Tower",
+        "location": "strip",
+        "address": "2000 S Las Vegas Blvd, Las Vegas, NV 89104",
+        "cost": "Observation Deck $25, SkyJump $120+",
+        "description": "Tallest building in Las Vegas with thrilling rides like bungee-style SkyJump off the 829-foot tower, plus panoramic views and world-class dining at the revolving Top of The World restaurant.",
+        "photo_url": "images/discover_strat.webp",
+        "site_url": "https://www.thestrat.com/"
+    },
+    {
+        "name": "The Venetian Gondola Ride",
+        "location": "strip",
+        "address": "3355 S Las Vegas Blvd, Las Vegas, NV 89109",
+        "cost": "$39 per person",
+        "description": "Experience a romantic gondola ride along a replica of Venice's Grand Canal. Gondoliers serenade guests as they glide under bridges and past cafes inside the iconic Venetian resort.",
+        "photo_url": "images/discover_gondola.webp",
+        "site_url": "https://www.venetian.com/resort/amenities/grand-canal-gondola-rides.html"
+    }
+]

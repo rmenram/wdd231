@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 213 - Las Vegas Best</title>
+    <meta name="description" content="WDD 213 - Las Vegas Best Project">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <meta property="og:description" content="WDD 213 - Las Vegas Best Project">
+    <meta property="og:image" content="https://rmenram.github.io/wdd231/lasvegasbest/images/open_graph_image.jpg">
+    <meta property="og:title"
+        content="WDD 213 - Las Vegas Best Project. This is a project for recommended Las Vegas Best places to visit page.">
+    <meta property="og:url" content="https://rmenram.github.io/wdd231/lasvegasbest/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/lasvegasbest.js" defer></script>
+    <!-- <script src="scripts/navigation.js" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadCards('downtown')">
+    <header>
+        <img src="images/corporate.svg" alt="Site Logo" width="24" height="24">
+        <span>Las Vegas Best</span>
+        <button id="ham-btn" class="hamburger" aria-label="Mobile Menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="strip.html">Strip</a></li>
+                <li class="current"><a href="#">Downtown</a></li>
+                <li><a href="outdoors.html">Outdoors</a></li>
+                <li><a href="tellus.html">Tell Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Downtown</h1>
+        <div class="hero">
+            <picture>
+                <img src="images/lasvegas-downtown-small.webp" loading="lazy"
+                    alt="Las Vegas Downtown, Las Vegas, Nevada">
+            </picture>
+        </div>
+        <div class="downtown">
+            <section class="le">
+                <div class="free">
+                    <h2>Free Attractions</h2>
+                </div>
+            </section>
+            <section class="re">
+                <div class="money">
+                    <h2>Cost Attractions</h2>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="card-section">
+                <h2>Downtown Best</h2>
+                <div class="button-menu-hidden">
+                    <button id="btn-Grid"><img src="images/apps.svg" alt="Grid Button" width="24" height="24"></button>
+                    <button id="btn-List"><img src="images/list.svg" alt="List Button" width="24" height="24"></button>
+                    <button id="btn-od-Grid"><img src="images/apps.svg" alt="Grid Button" width="24"
+                            height="24"></button>
+                    <button id="btn-od-List"><img src="images/list.svg" alt="List Button" width="24"
+                            height="24"></button>
+                </div>
+                <div class="button-menu">
+                    <button id="btn-dt-Grid"><img src="images/apps.svg" alt="Grid Button" width="24"
+                            height="24"></button>
+                    <button id="btn-dt-List"><img src="images/list.svg" alt="List Button" width="24"
+                            height="24"></button>
+                </div>
+                <div class="cards">
+
+                </div>
+                <div class="listings">
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="address">
+            <h3>Las Vegas Best</h3>
+            <p>1234 Main St</p>
+            <p>Las Vegas, NV 12345</p>
+            <p>info@lasvegasbest.org</p>
+            <p>123-456-7890</p>
+        </div>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt="Git Hub" width="16" height="16"></a>
+            <!-- <a href="#" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a> -->
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="twitter-X" width="16" height="16"></a>
+        </div>
+        <div class="dates">
+            <h3>WDD231 Class Project</h3>
+            <p>Ricardo Mendoza Ramos</p>
+            <p><span id="year"></span> Las Vegas Best</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+</body>
+
+</html>
